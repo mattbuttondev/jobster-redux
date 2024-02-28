@@ -7,7 +7,7 @@ import NavLinks from "./NavLinks";
 
 const SmallSidebar = () => {
   const dispatch = useDispatch();
-  const { isSidebarOpen } = useSelector((state) => state.user);
+  const { isSidebarOpen } = useSelector((store) => store.user);
 
   const toggle = () => {
     dispatch(toggleSidebar());
